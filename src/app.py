@@ -28,11 +28,7 @@ def delete_todo(position):
  
     if position < 0 or position >= len(todos):
         return jsonify({"error": "Invalid position"}), 400
-
-
-    todos.pop(position)
-    
-
+    todos.pop(position) 
     return jsonify(todos)
 
 
